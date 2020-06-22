@@ -15,7 +15,7 @@ normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406],
 config_path = 'config/imagenet/imagenet_san10_pairwise.yaml'
 file_id = '1lv5TYfJFYvNWt_Ik0E-nAuI5h4PqSwuk'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san10_pairwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
@@ -47,7 +47,7 @@ torch.cuda.empty_cache()
 config_path = 'config/imagenet/imagenet_san10_patchwise.yaml'
 file_id = '1aU60a3I-YZK1HYs25sj2V5nbXC9FqRZ5'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san10_patchwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
@@ -79,7 +79,7 @@ torch.cuda.empty_cache()
 config_path = 'config/imagenet/imagenet_san15_pairwise.yaml'
 file_id = '1yfJnq28XYAjJ4ThYd9kv9MFBKFvzCr4I'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san15_pairwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
@@ -111,7 +111,7 @@ torch.cuda.empty_cache()
 config_path = 'config/imagenet/imagenet_san15_patchwise.yaml'
 file_id = '1MJwkzyo2wxjSCynj-Jp8NQMSj6o89Ph-'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san15_patchwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
@@ -143,7 +143,7 @@ torch.cuda.empty_cache()
 config_path = 'config/imagenet/imagenet_san19_pairwise.yaml'
 file_id = '1wAaGSizflxOCSiVHh2EE3mtyGL0IuPK9'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san19_pairwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
@@ -175,7 +175,7 @@ torch.cuda.empty_cache()
 config_path = 'config/imagenet/imagenet_san19_patchwise.yaml'
 file_id = '1rtYIB-fTkDc4HR5s8K9Ddn2Xae-lhsfb'
 destination = './tmp/'
-filename = 'model_best.pth'
+filename = 'imagenet_san19_patchwise.pth'
 download_file_from_google_drive(file_id, destination, filename=filename)
 checkpoint = torch.load(os.path.join(destination, filename))
 sd = {}
